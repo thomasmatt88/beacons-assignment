@@ -1,0 +1,146 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Link Container */
+.LinkContainer {
+  /*border: 2px solid #ffaa3f;*/
+  background-color: grey;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+  background-color: #eeefef;
+  border-radius: 10px;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto 10px auto;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color: #eeefef;
+  font-size: medium;
+}
+
+input:focus {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.Views {
+  margin-left: 5px;
+  margin-right: auto;
+  float: left;
+  font-size: medium;
+}
+.DeleteButton {
+  margin-left: auto;
+  margin-right: 5px;
+  float: right;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.DeleteButton:hover {
+  background-color: #ffcdd2;
+}
+
+/* Link Container */
+
+ul,
+li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.AddButton {
+  width: 97%;
+  margin: 15px;
+  padding: 15px;
+  display: block;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #00ab6c;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+a:hover {
+  color: #00a0c6;
+}
+
+a:hover .LinkContainer {
+  background-color: #dcd0ff;
+}
+
+@media (min-width: 700px) {
+  .Editor {
+    width: 50%;
+  }
+  .App {
+    display: flex;
+  }
+}
+
+/* Mobile Phone Preview */
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  margin-top: 50px;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+  overflow-y: auto;
+}
