@@ -1,0 +1,6 @@
+__*
+venv
+.DS_Store
+.env
+database.db
+readme.txt
